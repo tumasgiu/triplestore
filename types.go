@@ -8,17 +8,17 @@ import (
 type XsdType string
 
 var (
-	XsdString   = XsdType("xsd:string")
-	XsdBoolean  = XsdType("xsd:boolean")
-	XsdDateTime = XsdType("xsd:dateTime")
+	XsdString   = XsdType("xs:string")
+	XsdBoolean  = XsdType("xs:boolean")
+	XsdDateTime = XsdType("xs:dateTime")
 
 	// 64-bit floating point numbers
-	XsdDouble = XsdType("xsd:double")
+	XsdDouble = XsdType("xs:double")
 	// 32-bit floating point numbers
-	XsdFloat = XsdType("xsd:float")
+	XsdFloat = XsdType("xs:float")
 
 	// signed 32 or 64 bit
-	XsdInteger = XsdType("xsd:integer")
+	XsdInteger = XsdType("xs:int")
 	// signed (8 bit)
 	XsdByte = XsdType("xsd:byte")
 	// signed (16 bit)

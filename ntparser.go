@@ -41,7 +41,7 @@ func (p *lenientNTParser) Parse() (out []Triple, err error) {
 }
 
 func parseTriple(b []byte) (Triple, error) {
-	tBuilder := new(tripleBuilder)
+	tBuilder := new(TripleBuilder)
 	var err error
 	if bytes.HasPrefix(b, []byte("_:")) {
 		if tBuilder.sub, b, err = parseBNodeSubject(b[2:]); err != nil {
